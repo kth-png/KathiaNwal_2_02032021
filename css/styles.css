@@ -1,9 +1,11 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
-.container {
-  display: flex;
-  
+
+.main_wrapper {
+  margin: auto;
+  width: 80%;
+
 }
 
 header {
@@ -51,6 +53,9 @@ ul {
   width:20px;
   padding:14px;
   text-align: center;
+}
+h1{
+  padding-bottom: 0px;
 }
 .filtres{
   display:flex;
