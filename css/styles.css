@@ -131,6 +131,9 @@ div .filtres{
   margin-right: 1%;
 }
 
+.info{
+  margin-bottom: 2%;
+}
 .fas .fa-money-bill-wave{
   border: 3px solid #F2F2F2;
 }
@@ -145,13 +148,13 @@ div .filtres{
 .cribs {
   background-color:#F2F2F2;
   border-radius: 20px;
-  padding-right: 4%;
+  padding-right: 2%;
+  width: 800px;
+  padding-bottom: 3%;
 }
 
 .cribs h1{
   margin-left:5%;
-  padding-top: 5%;
-  padding-bottom: 2%;
   margin-right: 2%;
 }
 
@@ -179,14 +182,59 @@ div .filtres{
 a {
   text-decoration: none;
   color: black;
-  width: 200px;
+  width: 250px;
 }
 .name{
   font-weight: bold;
 }
 figcaption{
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 1px;
 }
 .fa-star{
   color:#0065FC;
+}
+.more{
+  font-weight: bold;
+  margin-left: 55px;
+  display: block;
+  padding-top: 2%;
+}
+.populaires {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  width: 350px;
+  padding-right:2%;
+}
+.populaires div{
+  display:grid;
+  grid-template-columns: repeat: (3, 1fr);
+}
+.pop {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  border-radius: 30px;
+  padding-bottom: 2%;
+  display: flex;
+  margin-right: 10px;
+}
+.pop img {
+  width: 150px;
+  padding-top: 7px;
+  height: 200px;
+  border-radius: 30px 0px 0px 30px;
+  padding-left: 7px;
+  height: 150px;
+}
+
+.fadapop {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 1%;
+  padding-left:2%;
+}
+.populaires h1{
+  padding-left:11%;
 }
