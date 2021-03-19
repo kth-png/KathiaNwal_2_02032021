@@ -228,38 +228,67 @@ div .filtres{
     margin-left: 5%;
     margin-right: 2%;
   }
-  .activite_ville{
+
+
+  .activite-container{
     display:flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    grid-gap:4em;
   }
-  .activite_ville>*{
-    flex:1 100%
-  }
-  .aa{
-    display:flex;
-  }
-  .activite {
-    display:flex;
-    flex-wrap: wrap;
-  }
-  .act-un{
+
+
+  act-un{
     display:flex;
     flex-direction: column;
     border-radius:30px;
     background: darkorange;
   }
-  .img-act {
+  img-act {
     width: 200px;
     height: 100%;
   }
-  .port {
+  .activite-img {
     border-radius:30px 30px 0px 0px;
-    width:100%;
-    object-fit: none;
-    width: 200px;
-    height: 100%;
   }
-  .p-act{
-    padding-left: 10%;
-    font-weight: bold;
+
+  .shadow {
+    position: relative;
+    box-shadow: 1px 7px 15px 0px #D3D3D3;
+  }
+  .long-box{
+    border-radius: 30px;
+    width:30%;
+  }
+  .small-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+  .activite {
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    height:100%;
+  }
+  .activite-wrap{
+    display: flex;
+    flex-direction: column;
+    grid-gap:4em;
+    width:25%;
+  }
+  .long{
+    object-fit: cover;
+    width:100%;
+    height: inherit;
+  }
+  .small{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  .half{
+    height: 50%;
+  }
+  h3{
+    margin-left: 20px;
   }
