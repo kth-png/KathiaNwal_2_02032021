@@ -21,13 +21,14 @@ nav {
   width:30%;
 }
 
-.limenu {
+.nav {
   display: flex;
-  list-style-type: none;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
+.list{
+  list-style-type: none;
+}
 .navbar {
   border: none;
   text-decoration: none;
@@ -292,3 +293,12 @@ div .filtres{
   h3{
     margin-left: 20px;
   }
+  footer{
+    display:flex;
+    justify-content: space-between;
+  }
+  .footer-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    }
