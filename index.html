@@ -11,109 +11,114 @@
   <title>Reservia</title>
 </head>
 <body>
-  <div id="main_wrapper">
+  <div class="grid-container">
     <!-- Header -->
-    <header>
+    <div class="logo-navbar">
+      <header>
 
-      <!--logo-->
-      <div class="logo">
-        <img src="Images/Reservia.svg" alt="Logo Reservia" title="Logo reservia">
-      </div>
+        <!--logo-->
+        <div class="logo">
+          <img src="Images/Reservia.svg" alt="Logo Reservia" title="Logo reservia">
+        </div>
 
-      <!--navmenu-->
-      <nav alt="menu de navigation">
-        <ul class="list nav">
-          <li>
-            <a class="navbar color bold" href="#" alt="lien vers un formulaire d'inscription">S'inscrire</a>
-          </li>
-          <li>
-            <a class="navbar" href="#" alt="lien vers la section activités">Activités</a>
-          </li>
-          <li>
-            <a class="navbar color" href="#" alt="lien vers la section hébergements">Hébergements</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <!--navmenu-->
+        <nav alt="menu de navigation">
+          <ul class="list nav">
+            <li>
+              <a class="navbar color bold" href="#" alt="lien vers un formulaire d'inscription">S'inscrire</a>
+            </li>
+            <li>
+              <a class="navbar" href="#section__activites" alt="lien vers la section activités">Activités</a>
+            </li>
+            <li>
+              <a class="navbar color" href="#section__hebergements" alt="lien vers la section hébergements">Hébergements</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <!-- Section 1 -->
-    <section class="section__search">
-      <!--header2-->
-      <div class="section__search_head">
-        <h1>Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <span>En plein centre ville ou en pleine nature
-        </span>
-      </div>
+    <div class="searchbar-filter">
+      <section class="section__search">
+        <!--header2-->
+        <div class="section__search_head">
+          <h1>Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <span>En plein centre ville ou en pleine nature
+          </span>
+        </div>
 
-      <!-- Form recherche par ville -->
-      <form class="btn" action="index.html" method="post">
-        <p class="btn__label">
-          <label for="ville">
-            <i class="fas fa-map-marker-alt"></i>
-          </label>
-          <input class="search" type="search" name="ville" value="Marseille, France">
-          <button class="btn__search">
-            Rechercher
-          </button>
-        </p>
-      </form>
+        <!-- Form recherche par ville -->
+        <form class="btn" action="index.html" method="post">
+          <p class="btn__label">
+            <label for="ville">
+              <i class="fas fa-map-marker-alt"></i>
+            </label>
+            <input class="search bold" type="search" name="ville" value="Marseille, France">
+            <button class="btn__search search bold">
+              Rechercher
+            </button>
+          </p>
+        </form>
 
-      <!-- Filtres -->
-      <div class="filtres__container">
-        <span>Filtres</span>
-
-        <div class="filtres eco">
-          <div class="bt__icon">
-            <i class="fas fa-money-bill-wave"></i>
+        <!-- Filtres -->
+        <div class="filtres__container bold">
+          <div>
+            <span>Filtres</span>
           </div>
-          <div class="bt__text">
-            <span>Économique</span>
+
+          <div class="filtres eco">
+            <div class="bt__icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <div class="bt__text">
+              <span>Économique</span>
+            </div>
+          </div>
+
+          <div class="filtres kid">
+            <div class="bt__icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="bt__text">
+              <span>Familial</span>
+            </div>
+          </div>
+
+          <div class="filtres love">
+            <div class="bt__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="bt__text">
+              <span> Romantique</span>
+            </div>
+          </div>
+
+          <div class="filtres pet">
+            <div class="bt__icon">
+              <i class="fas fa-dog"></i>
+            </div>
+            <div class="bt__text">
+              <span> Animaux autorisés</span>
+            </div>
           </div>
         </div>
 
-        <div class="filtres kid">
-          <div class="bt__icon">
-            <i class="fas fa-child"></i>
-          </div>
-          <div class="bt__text">
-            <span>Familial</span>
-          </div>
+        <!--info-->
+        <div class="search__info">
+          <i class="fas fa-info-circle"></i>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
-
-        <div class="filtres love">
-          <div class="bt__icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <div class="bt__text">
-            <span> Romantique</span>
-          </div>
-        </div>
-
-        <div class="filtres pet">
-          <div class="bt__icon">
-            <i class="fas fa-dog"></i>
-          </div>
-          <div class="bt__text">
-            <span> Animaux autorisés</span>
-          </div>
-        </div>
-      </div>
-
-      <!--info-->
-      <div class="search__info">
-        <i class="fas fa-info-circle"></i>
-        <span>Plus de 500 logements sont disponibles dans cette ville</span>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Section 2, aside-->
-    <article class="section__aside">
-
-      <section class="section__hebergements">
+    <article class="section-aside">
+      <section id="section__hebergements" class="section-hebergements">
         <div class="section__hebergements__header">
-        <h1> Hébergements à Marseille </h1>
-      </div>
+          <h1> Hébergements à Marseille </h1>
+        </div>
 
         <div class="hebergements">
           <a class="" href="#">
@@ -252,7 +257,7 @@
       </section>
 
       <!-- Aside -->
-      <aside class="aside">
+      <aside class="section-populaires">
         <div class="aside__head">
           <h1>Les plus populaires</h1>
           <i class="fas fa-chart-line"></i>
@@ -325,35 +330,37 @@
       </aside>
     </article>
     <!-- Section 4 -->
-    <section>
-      <h1>Activités à Marseille</h1>
-      <div class="activite-container">
+    <article id="section__activites" class="section-activites">
+      <div>
+        <h1>Activités à Marseille</h1>
+      </div>
+      <div class="activite__container">
         <!--"activite"-->
-        <a class="long-box shadow" href="#">
+        <a class="long__box shadow" href="#">
 
           <figure class="activite">
-            <img class="activite-img long" src="images/port.jpg"/>
+            <img class="activite__img long" src="images/port.jpg" alt=""/>
             <figcaption>
               <h3>Vieux Port</h3>
             </figcaption>
           </figure>
         </a>
 
-        <div class="activite-wrap">
+        <div class="activite__wrap">
 
-          <a class="small-box shadow" href="#">
+          <a class="box-b small__box shadow" href="#">
 
             <figure class="activite">
-              <img class="activite-img small" src="images/pomegues.jpg">
+              <img class="activite__img small" src="images/pomegues1.jpg">
               <figcaption>
                 <h3>Fort de Pomègues</h3>
               </figcaption>
             </figure>
           </a>
 
-          <a class="small-box shadow" href="#">
+          <a class="box-c small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite-img small" src="images/frioul.jpg">
+              <img class="activite__img small" src="images/frioul1.jpg">
               <figcaption>
                 <h3>Îles du Frioul</h3>
               </figcaption>
@@ -362,28 +369,28 @@
         </div>
 
 
-        <a class="long-box shadow" href="#">
+        <a class="long__box shadow" href="#">
           <figure class="activite">
-            <img class="activite-img long" src="images/calanques.jpg">
+            <img class="activite__img long" src="images/calanques.jpg">
             <figcaption>
               <h3>Parc National des Calanques</h3>
             </figcaption>
           </figure>
         </a>
 
-        <div class="activite-wrap">
-          <a class="half small-box shadow" href="#">
+        <div class="activite__wrap">
+          <a class="box-e half small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite-img small" src="images/notredame.jpg">
+              <img class="activite__img small" src="images/notredame1.jpg">
               <figcaption>
                 <h3>Notre-Dame-de-la-Garde</h3>
               </figcaption>
             </figure>
           </a>
 
-          <a class="half small-box shadow" href="#">
+          <a class="box-f half small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite-img small" src="images/longchamp.jpg">
+              <img class="activite__img small" src="images/longchamp1.jpg">
               <figcaption>
                 <h3>Parc Longchamp</h3>
               </figcaption>
@@ -391,10 +398,10 @@
           </a>
         </div>
       </div>
-    </section>
+    </article>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="footer-list">
         <h2>A propos</h2>
 
