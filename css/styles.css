@@ -171,7 +171,6 @@ figure{
 
 .section__hebergements__header{
   padding-left: 17px;
-  /*width: 500px;*/
 }
 
 .hebergements{
@@ -181,6 +180,7 @@ figure{
   max-width: 991px;
   min-width: 744px;
   flex:1;
+  grid-gap:20px;
 }
 
 .hebergements__figure {
@@ -234,7 +234,7 @@ a {
   background-color: #F2F2F2;
   border-radius: 20px;
   padding-bottom: 1em;
-  margin-left: 10px;
+  margin-left: 20px;
   display:flex;
   flex-direction:column;
   flex:1;
@@ -254,6 +254,7 @@ a {
   flex-direction: column;
   max-width: 350px;
   align-self: center;
+  grid-gap: 20px;
 }
 
 .fa-chart-line{
@@ -270,13 +271,13 @@ a {
 }
 
 .aside__img {
-  /*display:flex;*/
+  display:flex;
 }
 
 .aside__img img {
   width: 11em;
   border-radius: 30px 0px 0px 30px;
-  height: 11em;
+  height: 10em;
   object-fit: cover;
 }
 
@@ -288,12 +289,13 @@ a {
 }
 
 .n-price p{
-  max-width: 140px;
+  max-width: 163px;
 }
 
 /*SECTION 3*/
 .activite__container{
   display:flex;
+  grid-gap:20px;
 }
 
 .activite__img {
@@ -324,6 +326,7 @@ a {
   width:21%;
   justify-content: space-between;
   flex:auto;
+  grid-gap:20px;
 }
 
 .long{
@@ -648,10 +651,6 @@ footer{
     margin-left:0;
   }
 
-  .section-aside{
-    flex-direction:column-reverse;
-  }
-
   .aside-aside__links{
     min-width: 370px;
   }
@@ -783,11 +782,14 @@ footer{
     flex-direction:column-reverse;
   }
 
+  .aside__head{
+    padding-left: 12px;
+  }
+
   .section-populaires{
     margin-left: 0px;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    align-items: center;
     background-color: #DEEBFF;
     padding-right: 5px;
     padding-left: 5px;
@@ -834,26 +836,22 @@ footer{
     background-color: transparent;
   }
 
-  .section__hebergements__header{
-    align-self: center;
+  .activite__container{
+    flex-wrap: wrap;
   }
 
-.activite__container{
-  flex-wrap: wrap;
-}
+  .long__box{
+    width:45%;
+    flex: auto;
+  }
 
-.long__box{
-  width:45%;
-  flex: auto;
-}
+  .activite__wrap{
+    width: 45%;
+    justify-content: space-around;
+  }
 
-.activite__wrap{
-  width: 45%;
-  justify-content: space-around;
-}
-
-.footer-list{
-  margin-right: 15%;
-  padding-left: 2%;
-}
+  .footer-list{
+    margin-right: 15%;
+    padding-left: 2%;
+  }
 }
