@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,60 +11,53 @@
   <title>Reservia</title>
 </head>
 <body>
-  <div class="grid-container">
+  <div class="container">
     <!-- Header -->
-    <div class="logo-navbar">
-      <header>
-
+    <header>
+      <nav>
         <!--logo-->
-        <div class="logo">
-          <img src="Images/Reservia.svg" alt="Logo Reservia" title="Logo reservia">
-        </div>
-
+        <img src="Images/Reservia.svg" alt="Logo Reservia" title="Logo reservia">
         <!--navmenu-->
-        <nav alt="menu de navigation">
-          <ul class="list nav">
-            <li>
-              <a class="navbar color bold" href="#" alt="lien vers un formulaire d'inscription">S'inscrire</a>
-            </li>
-            <li>
-              <a class="navbar" href="#section__activites" alt="lien vers la section activités">Activités</a>
-            </li>
-            <li>
-              <a class="navbar color" href="#section__hebergements" alt="lien vers la section hébergements">Hébergements</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+        <ul class="list nav">
+          <li class="link3">
+            <a class="navbar color bold" href="#">S'inscrire</a>
+          </li>
+          <li class="absolute-link2">
+            <a class="navbar" href="#section__activites">Activités</a>
+          </li>
+          <li class="absolute-link1">
+            <a class="navbar color link1" href="#section__hebergements">Hébergements</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Section 1 -->
     <div class="searchbar-filter">
       <section class="section__search">
         <!--header2-->
         <div class="section__search_head">
-          <h1>Trouvez votre hébergement pour des vacances de rêve
-          </h1>
+          <h2>Trouvez votre hébergement pour des vacances de rêve
+          </h2>
           <span>En plein centre ville ou en pleine nature
           </span>
         </div>
 
         <!-- Form recherche par ville -->
         <form class="btn" action="index.html" method="post">
-          <p class="btn__label">
-            <label for="ville">
+            <label>
               <i class="fas fa-map-marker-alt"></i>
             </label>
             <input class="search bold" type="search" name="ville" value="Marseille, France">
             <button class="btn__search search bold">
-              Rechercher
+              <span class="text">Rechercher</span>
+              <span class="icon"><i class="fas fa-search"></i></span>
             </button>
-          </p>
         </form>
 
         <!-- Filtres -->
         <div class="filtres__container bold">
-          <div>
+          <div class="span-filtres">
             <span>Filtres</span>
           </div>
 
@@ -117,7 +110,7 @@
     <article class="section-aside">
       <section id="section__hebergements" class="section-hebergements">
         <div class="section__hebergements__header">
-          <h1> Hébergements à Marseille </h1>
+          <h2> Hébergements à Marseille </h2>
         </div>
 
         <div class="hebergements">
@@ -131,6 +124,49 @@
                 <div class="">
                   <p class="name">Auberge la Cannebière</p>
                   <p class="tarif">Nuit à partir de 25€</p>
+                </div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="" href="#">
+            <figure class="hebergements__figure shadow">
+              <div class="hebergements__img">
+                <img src="images/duport.jpg" alt="chambre avec deux lits simples avec une décoration sobre">
+              </div>
+
+              <figcaption class="hebergements__figcaption">
+                <div class="name-price">
+                  <p class="name">Hôtel du port</p>
+                  <p class="tarif">Nuit à partir de 52€</p>
+                </div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a class="" href="#">
+            <figure class="hebergements__figure shadow">
+              <div class="hebergements__img">
+                <img src="images/lesmouettes.jpg" alt="chambre avec lit double et penderie">
+              </div>
+              <figcaption class="hebergements__figcaption">
+                <div class="name-price">
+                  <p class="name">Hôtel Les mouettes</p>
+                  <p class="tarif">Nuit à partir de 76€</p>
                 </div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
@@ -165,27 +201,6 @@
             </figure>
           </a>
 
-          <a class="" href="#">
-            <figure class="hebergements__figure shadow">
-              <div class="hebergements__img">
-                <img src="images/duport.jpg" alt="chambre avec deux lits simples avec une décoration sobre">
-              </div>
-
-              <figcaption class="hebergements__figcaption">
-                <div class="name-price">
-                  <p class="name">Hôtel du port</p>
-                  <p class="tarif">Nuit à partir de 52€</p>
-                </div>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </figcaption>
-            </figure>
-          </a>
 
           <a class="" href="#">
             <figure class="hebergements__figure shadow">
@@ -209,26 +224,7 @@
             </figure>
           </a>
 
-          <a class="" href="#">
-            <figure class="hebergements__figure shadow">
-              <div class="hebergements__img">
-                <img src="images/lesmouettes.jpg" alt="chambre avec lit double et penderie">
-              </div>
-              <figcaption class="hebergements__figcaption">
-                <div class="name-price">
-                  <p class="name">Hôtel Les mouettes</p>
-                  <p class="tarif">Nuit à partir de 76€</p>
-                </div>
-                <div classs="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </figcaption>
-            </figure>
-          </a>
+
 
           <a class="" href="#">
             <figure class="hebergements__figure shadow">
@@ -259,7 +255,7 @@
       <!-- Aside -->
       <aside class="section-populaires">
         <div class="aside__head">
-          <h1>Les plus populaires</h1>
+          <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line"></i>
         </div>
         <div class="aside__links">
@@ -332,7 +328,7 @@
     <!-- Section 4 -->
     <article id="section__activites" class="section-activites">
       <div>
-        <h1>Activités à Marseille</h1>
+        <h2>Activités à Marseille</h2>
       </div>
       <div class="activite__container">
         <!--"activite"-->
@@ -341,7 +337,7 @@
           <figure class="activite">
             <img class="activite__img long" src="images/port.jpg" alt=""/>
             <figcaption>
-              <h3>Vieux Port</h3>
+              <p class="name tab">Vieux Port</p>
             </figcaption>
           </figure>
         </a>
@@ -351,18 +347,18 @@
           <a class="box-b small__box shadow" href="#">
 
             <figure class="activite">
-              <img class="activite__img small" src="images/pomegues1.jpg">
+              <img class="activite__img small pomegues" src="images/pomegues1.jpg">
               <figcaption>
-                <h3>Fort de Pomègues</h3>
+                <p class="name tab">Fort de Pomègues</p>
               </figcaption>
             </figure>
           </a>
 
           <a class="box-c small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite__img small" src="images/frioul1.jpg">
+              <img class="activite__img small frioul" src="images/frioul1.jpg">
               <figcaption>
-                <h3>Îles du Frioul</h3>
+                <p class="name tab">Îles du Frioul</p>
               </figcaption>
             </figure>
           </a>
@@ -373,7 +369,7 @@
           <figure class="activite">
             <img class="activite__img long" src="images/calanques.jpg">
             <figcaption>
-              <h3>Parc National des Calanques</h3>
+              <p class="name tab">Parc National des Calanques</p>
             </figcaption>
           </figure>
         </a>
@@ -381,18 +377,18 @@
         <div class="activite__wrap">
           <a class="box-e half small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite__img small" src="images/notredame1.jpg">
+              <img class="activite__img small notredame" src="images/notredame1.jpg">
               <figcaption>
-                <h3>Notre-Dame-de-la-Garde</h3>
+                <p class="name tab">Notre-Dame-de-la-Garde</p>
               </figcaption>
             </figure>
           </a>
 
           <a class="box-f half small__box shadow" href="#">
             <figure class="activite">
-              <img class="activite__img small" src="images/longchamp1.jpg">
+              <img class="activite__img small longchamp" src="images/longchamp1.jpg">
               <figcaption>
-                <h3>Parc Longchamp</h3>
+                <p class="name tab">Parc Longchamp</p>
               </figcaption>
             </figure>
           </a>
