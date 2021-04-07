@@ -93,7 +93,13 @@ h2
   display: flex;
 }
 
-
+.btn p
+{
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+}
 .fa-map-marker-alt
 {
   border-radius: 10px 0px 0px 10px;
