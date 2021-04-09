@@ -1,26 +1,22 @@
-body
-{
+body{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   margin:0;
 }
-.container
-{
+.container{
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 7px;
 }
-.shadow
-{
+.shadow{
   position: relative;
   box-shadow: 0px 3px 15px 0px #D3D3D3;
 }
-a
-{
+a{
   text-decoration: none;
   color: black;
-  margin:5px;
 }
+
 /*HEADER*/
 
 header
@@ -240,11 +236,13 @@ div .filtres
   border-radius: 40px;
   align-self: center;
 }
+
 .fa-info
 {
   color: #0065FC;
   font-size: 8px;
 }
+
 .span-info
 {
   padding-left: 5px;
@@ -299,8 +297,8 @@ figure
 
 .hebergements__figure img
 {
-  width: 16em;
-  height: 8em;
+  width: 19em;
+  height: 9em;
   border-radius: 30px 30px 0px 0px;
   object-fit: cover;
 }
@@ -315,6 +313,11 @@ figure
   text-align: left;
   padding-left: 10px;
   padding-right: 1px;
+}
+
+.stars
+{
+  padding-bottom: 7px;
 }
 
 .blue
@@ -385,7 +388,6 @@ figure
   display: flex;
   justify-content: flex-start;
   padding: 4px;
-  /*flex-wrap: wrap;*/
   padding-right: 12px;
 }
 
@@ -398,7 +400,7 @@ figure
 {
   width: 11em;
   border-radius: 30px 0px 0px 30px;
-  height: 12em;
+  height: 10.5em;
   object-fit: cover;
 }
 
@@ -406,8 +408,10 @@ figure
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0.5em;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .n-price p
@@ -517,6 +521,8 @@ footer
 .footer-list a
 {
   margin-left: 0%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 @media all and (max-width: 480px)
@@ -525,7 +531,9 @@ footer
   {
     margin:0;
   }
-  header, .section__search, .section-hebergements, .section-activites {
+
+  header, .section__search, .section-hebergements, .section-activites
+  {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -553,15 +561,23 @@ footer
   }
   .absolute-link1 a:hover
   {
-    padding-top: 0px;
     border-top: none;
-    color: #0065FC;
-    border-bottom-color: #0065FC;
+    color: inherit;
   }
   .absolute-link2 a:hover
   {
-    padding-top: 0px;
     border-top: none;
+    color: inherit;
+  }
+  .absolute-link1:active
+  {
+    padding-top: 0px;
+    color: #0065FC;
+    border-bottom-color: #0065FC;
+  }
+  .absolute-link2:active
+  {
+    padding-top: 0px;
     color: #0065FC;
     border-bottom-color: #0065FC;
   }
@@ -570,20 +586,14 @@ footer
     width:50%;
     position: absolute;
     top:10%;
-    left:2%;
+    left:0%;
     margin-top:10px;
   }
   .absolute-link1 a
   {
-    border-bottom:solid #F2F2F2;
-    padding-bottom:20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
     padding-left: 20%;
-    padding-right: 37%;
     border-top:none;
-    margin-left: -9px;
+    padding-bottom:23px;
   }
   .absolute-link2
   {
@@ -595,15 +605,13 @@ footer
   }
   .absolute-link2 a
   {
-    margin-left:-5px;
-    margin-right:0;
-    padding-left: 30%;
-    padding-right: 49%;
-    margin-top:5px;
-    color:black;
-    border-bottom: solid;
-    padding-bottom:20px;
-    border-bottom-color: #F2F2F2;
+    padding-left: 25%;
+    padding-bottom:23px;
+  }
+  .absolute-link1, .absolute-link2
+  {
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 20px;
   }
   .link3
   {
@@ -687,24 +695,24 @@ footer
     border-radius: 0px;
     margin-left:0;
   }
-  .section-aside
+  .aside__links
   {
-    flex-direction:column-reverse;
-  }
-  .aside-aside__links
-  {
-    min-width: 370px;
+    max-width: none;
+    align-self: auto;
+    margin-left: 9px;
+    margin-right: 9px;
   }
   .aside__figure{
     padding-right:12px;
   }
   .n-price p
   {
-    max-width: 157px;
+    max-width: none;
   }
   .aside__figcaption
   {
     justify-content: space-around;
+    padding-left: 1em;
   }
   .aside__img img
   {
@@ -727,9 +735,18 @@ footer
   }
   .hebergements
   {
-    min-width: 350px;
+    min-width: 300px;
     flex-direction: column;
-    align-self: center;
+  }
+  .heberments a
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .name-price p
+  {
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
   .activite__container
   {
@@ -760,10 +777,22 @@ footer
   {
     flex-direction: column;
   }
+  .about
+  {
+    padding-left: 0;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 621px)
 {
+  .container
+  {
+    margin:0;
+  }
+  header, .section__search, .section-hebergements, .section-activites {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .navbar
   {
     margin-left:2em;
@@ -827,28 +856,31 @@ footer
     border-radius: 0px;
     margin-left:0;
   }
-  .aside-aside__links
+  .aside__links
   {
-    min-width: 370px;
+    max-width: none;
+    align-self: auto;
+    margin-left: 9px;
+    margin-right: 9px;
   }
-  .aside__figure
-  {
-    flex-wrap: nowrap;
+  .aside__figure{
+    padding-right:12px;
   }
   .n-price p
   {
-    min-width: 140px;
-    max-width: 190px;
+    max-width: none;
   }
   .aside__figcaption
   {
-    justify-content: unset;
+    justify-content: space-around;
+    padding-left: 1em;
   }
   .aside__img img
   {
     width:9em;
-    height: 9em;
+    height: 11em;
   }
+
   .section-hebergements
   {
     background-color: transparent;
@@ -896,6 +928,10 @@ footer
   footer
   {
     flex-direction: column;
+  }
+  .about
+  {
+    padding-left: 0;
   }
 }
 
