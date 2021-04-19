@@ -129,6 +129,11 @@ h2
   padding-left: 5px;
 }
 
+input:focus{
+  outline: 2px solid transparent;
+  background-color: #DEEBFF;
+}
+
 .btn__search
 {
   width: 100px;
@@ -504,6 +509,8 @@ footer
   justify-content: space-between;
   background-color: #F2F2F2;
   margin-top: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .about
